@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 //home
-Route::get('/', [HomeController::class,'index']);
+// Route::get('/', [HomeController::class,'index']);
 
