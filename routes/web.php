@@ -41,4 +41,4 @@ Route::get('/auth/google/callback', [GoogleController::class, 'handleGoogleCallb
 //Facebook Login URL
 Route::get('/auth/facebook/redirect', [FacebookController::class, 'handleFacebookRedirect']);
 Route::get('/auth/facebook/callback', [FacebookController::class, 'handleFacebookCallback']);
-;
+
