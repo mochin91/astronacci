@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,8 @@ Route::get('/', function () {
 
 //home
 Route::get('/', [HomeController::class,'index']);
+
+//Article
+Route::get('/Article', [ArticleController::class,'index']);
+Route::get('/Article/detail/{slug}', [ArticleController::class,'detail']);
 

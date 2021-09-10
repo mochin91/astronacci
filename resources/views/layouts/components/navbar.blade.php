@@ -15,7 +15,7 @@
                     <a class="btn btn-warning me-2" href="{{route('register')}}">Sign Up</a>
                 @else
                 <li class="nav-item me-3">
-                    <a class="nav-link" href="{{ url('Articles/index') }}">Articles</a>
+                    <a class="nav-link" href="{{ url('Article') }}">Articles</a>
                 </li>
                 <li class="nav-item me-3">
                     <a class="nav-link" href="{{ url('Videos/index') }}">Videos</a>
