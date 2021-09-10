@@ -7,19 +7,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li class="nav-item me-3">
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('Articles/index') }}">Articles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('Videos/index') }}">Videos</a>
                 </li>
                 @guest
                     <a class="btn btn-outline-light me-2" href="{{route('login')}}">Login</a>
                     <a class="btn btn-warning me-2" href="{{route('register')}}">Sign Up</a>
                 @else
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="{{ url('Articles/index') }}">Articles</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="{{ url('Videos/index') }}">Videos</a>
+                </li>
                     <a class="btn btn-warning me-2" href="{{route('logout')}}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Log out</a>
                     <a class="btn me-2 border-start border-end" aria-disabled="true">{{ Auth::user()->name }}</a>
                     <form action="{{route('logout')}}" id="logout-form" method="POST">
