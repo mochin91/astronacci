@@ -27,12 +27,12 @@ Route::get('/', function () {
 Route::get('/', [HomeController::class,'index']);
 
 //Article
-Route::get('/Article', [ArticleController::class,'index']);
-Route::get('/Article/detail/{slug}', [ArticleController::class,'detail']);
+Route::get('/Article', [ArticleController::class,'index'])->middleware(['auth']);
+Route::get('/Article/detail/{slug}', [ArticleController::class,'detail'])->middleware(['auth']);
 
 //Article
-Route::get('/Videos', [VideoController::class,'index']);
-Route::get('/Videos/detail/{slug}', [VideoController::class,'detail']);
+Route::get('/Videos', [VideoController::class,'index'])->middleware(['auth']);
+Route::get('/Videos/detail/{slug}', [VideoController::class,'detail'])->middleware(['auth']);
 
 //Google Login URL
 Route::get('/auth/google/redirect', [GoogleController::class, 'handleGoogleRedirect']);
