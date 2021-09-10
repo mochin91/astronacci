@@ -38,10 +38,10 @@
                     </form>
                     <div class="row">
                         <div class="col-md-12">
-                            <a href="{{route('password.email')}}" class="btn btn-primary w-100 mt-3">Login with Facebook</a>
+                            <a href="/auth/facebook/redirect" class="btn btn-primary w-100 mt-3">Login with Facebook</a>
                         </div>
                         <div class="col-md-12">
-                            <a href="{{route('password.email')}}" class="btn btn-danger w-100 mt-2">Login with Google</a>
+                            <a href="/auth/google/redirect" class="btn btn-danger w-100 mt-2">Login with Google</a>
                         </div>
                     </div>
                 </div>
