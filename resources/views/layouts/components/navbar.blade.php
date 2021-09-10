@@ -18,7 +18,7 @@
                     <a class="nav-link" href="{{ url('Article') }}">Articles</a>
                 </li>
                 <li class="nav-item me-3">
-                    <a class="nav-link" href="{{ url('Videos/index') }}">Videos</a>
+                    <a class="nav-link" href="{{ url('Videos') }}">Videos</a>
                 </li>
                     <a class="btn btn-warning me-2" href="{{route('logout')}}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Log out</a>
                     <a class="btn me-2 border-start border-end" aria-disabled="true">{{ Auth::user()->name }}</a>
