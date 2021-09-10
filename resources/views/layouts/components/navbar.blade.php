@@ -16,7 +16,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('Videos/index') }}">Videos</a>
                 </li>
-                {{-- @guest
+                @guest
                     <a class="btn btn-outline-light me-2" href="{{route('login')}}">Login</a>
                     <a class="btn btn-warning me-2" href="{{route('register')}}">Sign Up</a>
                 @else
@@ -25,7 +25,7 @@
                     <form action="{{route('logout')}}" id="logout-form" method="POST">
                         @csrf
                     </form>
-                @endguest --}}
+                @endguest
             </ul>
         </div>
     </div>
